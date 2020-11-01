@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fb2d37f1-3d10-407d-acc4-851cdef5a0ec" name="Default Changelist" comment="">
+    <list default="true" id="fb2d37f1-3d10-407d-acc4-851cdef5a0ec" name="Default Changelist" comment="添加test接口">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/DockerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/DockerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/antrun/build-main.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +56,7 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
-  <component name="RunManager" selected="Docker.docker/Dockerfile">
+  <component name="RunManager" selected="Spring Boot.DockerApplication">
     <configuration name="DockerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="dockerdemo" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.demo.DockerApplication" />
@@ -219,7 +220,8 @@
       <workItem from="1604067923111" duration="717000" />
       <workItem from="1604068660682" duration="7353000" />
       <workItem from="1604115092488" duration="5751000" />
-      <workItem from="1604165262981" duration="390000" />
+      <workItem from="1604165262981" duration="1496000" />
+      <workItem from="1604198924760" duration="5238000" />
     </task>
     <task id="LOCAL-00001" summary="pom.xml 打包插件配置">
       <created>1604165346047</created>
@@ -228,7 +230,35 @@
       <option name="project" value="LOCAL" />
       <updated>1604165346047</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="pom.xml 打包插件配置">
+      <created>1604165676872</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1604165676872</updated>
+    </task>
+    <task id="LOCAL-00003" summary="修改 application.properties 端口号">
+      <created>1604202843251</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1604202843251</updated>
+    </task>
+    <task id="LOCAL-00004" summary="删除taget 目录">
+      <created>1604203225274</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1604203225274</updated>
+    </task>
+    <task id="LOCAL-00005" summary="添加test接口">
+      <created>1604213888231</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1604213888231</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,7 +266,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="pom.xml 打包插件配置" />
-    <option name="LAST_COMMIT_MESSAGE" value="pom.xml 打包插件配置" />
+    <MESSAGE value="修改 application.properties 端口号" />
+    <MESSAGE value="删除taget 目录" />
+    <MESSAGE value="添加test接口" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加test接口" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="180" key="#Docker" timestamp="1604134386967">
@@ -275,30 +308,34 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="675" y="128" key="#docker/Dockerfile/0.0.1920.1040@0.0.1920.1040" timestamp="1604126321770" />
-    <state x="572" y="113" key="CommitChangelistDialog2" timestamp="1604165344966">
+    <state x="572" y="113" key="CommitChangelistDialog2" timestamp="1604213906462">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="572" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1604165344966" />
+    <state x="572" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1604213906462" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1604202876485">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604202876485" />
     <state x="740" y="277" key="FileChooserDialogImpl" timestamp="1604165102687">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="277" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1604165102687" />
-    <state width="1876" height="475" key="GridCell.Tab.0.bottom" timestamp="1604076021311">
+    <state width="1876" height="332" key="GridCell.Tab.0.bottom" timestamp="1604214343629">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="475" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604076021311" />
-    <state width="1876" height="475" key="GridCell.Tab.0.center" timestamp="1604076021311">
+    <state width="1876" height="332" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604214343629" />
+    <state width="1876" height="332" key="GridCell.Tab.0.center" timestamp="1604214343629">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="475" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604076021311" />
-    <state width="1876" height="475" key="GridCell.Tab.0.left" timestamp="1604076021311">
+    <state width="1876" height="332" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604214343629" />
+    <state width="1876" height="332" key="GridCell.Tab.0.left" timestamp="1604214343629">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="475" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604076021311" />
-    <state width="1876" height="475" key="GridCell.Tab.0.right" timestamp="1604076021311">
+    <state width="1876" height="332" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604214343629" />
+    <state width="1876" height="332" key="GridCell.Tab.0.right" timestamp="1604214343629">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="475" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604076021311" />
+    <state width="1876" height="332" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604214343629" />
     <state width="1876" height="525" key="GridCell.Tab.1.bottom" timestamp="1604076021309">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -319,10 +356,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="463" y="151" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1604068522603" />
-    <state x="552" y="255" key="Vcs.Push.Dialog.v2" timestamp="1604165349209">
+    <state x="552" y="255" key="Vcs.Push.Dialog.v2" timestamp="1604213923056">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604165349209" />
+    <state x="552" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604213923056" />
+    <state x="780" y="256" width="599" height="528" key="VcsDiffUtil.ChangesDialog" timestamp="1604203269474">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="780" y="256" width="599" height="528" key="VcsDiffUtil.ChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604203269474" />
     <state x="271" y="260" key="com.intellij.docker.deployment.ui.DockerPortBindingsField.v173.dialogSize" timestamp="1604126421868">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
