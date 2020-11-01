@@ -14,4 +14,11 @@ public class DockerController {
         log.info("Hello Docker!");
         return "Hello Docker!";
     }
+
+    @RequestMapping("/test")
+    public String test() {
+        log.info("Hello Docker test!");
+        return "Hello Docker test!";
+    }
+
 }
