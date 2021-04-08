@@ -4,9 +4,12 @@ import com.alibaba.excel.EasyExcel;
 import com.alibaba.excel.ExcelWriter;
 import com.alibaba.excel.write.metadata.WriteSheet;
 import com.alibaba.excel.write.metadata.fill.FillConfig;
+import com.demo.excel.CustomCellWriteHandler;
+import com.demo.excel.MyMergeStrategy;
 import com.demo.utils.StringUtils;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.apache.poi.ss.util.CellRangeAddress;
 import org.springframework.util.ResourceUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -67,6 +70,18 @@ public class DockerController {
     }
     @RequestMapping("/importModeExcel")
     public String importModeExcel() throws Exception {
+
+        //这里自定义一个单元格的格式(标黄的行高亮显示)
+        Integer[] yellowRows = {3, 5, 7, 9};
+        Set<Integer> yellowRowsSet = new HashSet<>(Arrays.asList(yellowRows));
+        CustomCellWriteHandler customCellWriteHandler = new CustomCellWriteHandler(yellowRowsSet);
+
+        //定义合并单元格的坐标范围
+        List<CellRangeAddress> cellRangeAddresss = MyMergeStrategy.getCellRangeAddresss();
+        //定义合并单元格策略
+        MyMergeStrategy myMergeStrategy = new MyMergeStrategy(cellRangeAddresss);
+
+
         String path = ResourceUtils.getURL("").getPath();
         path = (path.substring(1,path.length())+"src/main/resources/").replace("/", File.separator);
         String fileName =  path+"demomode.xls";
@@ -76,6 +91,10 @@ public class DockerController {
         }
         // 设置输出目标和模板，out和template 可以是文件路径或流
         ExcelWriter excelWriter = EasyExcel.write(path+ Calendar.getInstance().getTimeInMillis()+".xls")
+                //注册单元格式
+                //.registerWriteHandler(customCellWriteHandler)
+                //注册合并策略
+                .registerWriteHandler(myMergeStrategy)
                 .withTemplate(fileName)
                 .build();
         // 创建 Sheet
@@ -93,5 +112,7 @@ public class DockerController {
         log.info("importModeExcel success!");
         return "importModeExcel success!";
     }
+
+
 
 }
