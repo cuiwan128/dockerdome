@@ -9,7 +9,7 @@ public class Client {
     static {
         try {
             client = PulsarClient.builder()
-                        .serviceUrl("pulsar://192.168.0.120:6650")
+                        .serviceUrl("pulsar://39.103.159.181:6650")
                         .build();
         } catch (PulsarClientException e) {
             e.printStackTrace();

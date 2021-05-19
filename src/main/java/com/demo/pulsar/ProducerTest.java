@@ -1,5 +1,6 @@
 package com.demo.pulsar;
 
+import org.apache.pulsar.client.api.MessageRouter;
 import org.apache.pulsar.client.api.Producer;
 import org.apache.pulsar.client.api.PulsarClient;
 import org.apache.pulsar.client.api.PulsarClientException;
@@ -15,7 +16,7 @@ public class ProducerTest {
                     .create();
 
             // You can then send messages to the broker and topic you specified:
-            for (int i = 0; i < 1000000; i++) {
+            for (int i = 0; i < 10; i++) {
                 producer.send((i+"---My message").getBytes());
             }
 
