@@ -113,5 +113,31 @@
             <artifactId>rocketmq-client</artifactId>
             <version>4.3.0</version>
         </dependency>
+        <dependency>
+            <groupId>com.jcraft</groupId>
+            <artifactId>jsch</artifactId>
+            <version>0.1.55</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.10</version>
+        </dependency>
+        <!--表达式求值引擎-->
+        <dependency>
+            <groupId>com.googlecode.aviator</groupId>
+            <artifactId>aviator</artifactId>
+            <version>3.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.eweb4j</groupId>
+            <artifactId>fel</artifactId>
+            <version>0.8</version>
+        </dependency>
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+        </dependency>
+
     </dependencies>
 </project>
